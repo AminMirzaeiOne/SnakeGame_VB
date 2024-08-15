@@ -7,6 +7,9 @@ Imports System.Threading.Tasks
 Public Module Program
     Public Property Width As Integer
     Public Property Height As Integer
+
+    Dim ifno As ConsoleKeyInfo = New ConsoleKeyInfo()
+
     Public Sub Main()
         Dim finished As Boolean = False
         Width = 100
