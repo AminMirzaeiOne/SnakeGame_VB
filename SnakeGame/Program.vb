@@ -8,8 +8,12 @@ Public Module Program
     Public Property Width As Integer
     Public Property Height As Integer
 
-    Dim ifno As ConsoleKeyInfo = New ConsoleKeyInfo()
+    Public Property x As Integer
+    Public Property y As Integer
+
+    Dim info As ConsoleKeyInfo = New ConsoleKeyInfo()
     Dim key As Char = "w"
+
     Public Sub Main()
         Dim finished As Boolean = False
         Width = 100
@@ -43,6 +47,12 @@ Public Module Program
             System.Console.SetCursorPosition(Width, i)
             System.Console.Write("-")
         Next
+    End Sub
+
+    Public Sub Input()
+        If Console.KeyAvailable Then
+            key = info.KeyChar
+        End If
     End Sub
 
 End Module
