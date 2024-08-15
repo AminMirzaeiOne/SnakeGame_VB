@@ -11,8 +11,11 @@ Public Module Program
         Dim finished As Boolean = False
         Width = 100
         Height = 100
-        DrawBoard()
-        System.Console.Read()
+        While Not finished
+            DrawBoard()
+            System.Console.Read()
+        End While
+
     End Sub
 
     Public Sub DrawBoard()
