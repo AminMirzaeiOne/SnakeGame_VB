@@ -67,4 +67,9 @@ Public Module Program
         System.Console.Write("▀")
     End Sub
 
+    Public Sub Position(x As Integer, y As Integer)
+        X_Position = x
+        Y_Position = y
+    End Sub
+
 End Module
