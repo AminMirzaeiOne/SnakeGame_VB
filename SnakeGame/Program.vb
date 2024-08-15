@@ -11,6 +11,9 @@ Public Module Program
     Public Property x As Integer
     Public Property y As Integer
 
+    Public Property X_Position As Integer
+    Public Property Y_Position As Integer
+
     Dim info As ConsoleKeyInfo = New ConsoleKeyInfo()
     Dim key As Char = "w"
 
