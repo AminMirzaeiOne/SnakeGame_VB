@@ -9,7 +9,7 @@ Public Module Program
     Public Property Height As Integer
 
     Dim ifno As ConsoleKeyInfo = New ConsoleKeyInfo()
-
+    Dim key As Char = "w"
     Public Sub Main()
         Dim finished As Boolean = False
         Width = 100
