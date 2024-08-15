@@ -10,7 +10,7 @@ Public Module Program
     Public Sub Main()
         Dim finished As Boolean = False
         Width = 100
-        Height = 100
+        Height = 50
         While Not finished
             DrawBoard()
             System.Console.Read()
