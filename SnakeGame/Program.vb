@@ -20,6 +20,7 @@ Public Module Program
         Height = 50
         x = 20
         y = 20
+        System.Console.CursorVisible = False
         While Not finished
             DrawBoard()
             DrawSnake()
