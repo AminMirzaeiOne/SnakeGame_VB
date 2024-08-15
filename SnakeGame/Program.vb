@@ -22,6 +22,7 @@ Public Module Program
         y = 20
         While Not finished
             DrawBoard()
+            DrawSnake()
             System.Console.Read()
         End While
 
