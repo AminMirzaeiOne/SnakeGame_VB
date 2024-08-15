@@ -57,4 +57,9 @@ Public Module Program
         End If
     End Sub
 
+    Public Sub DrawSnake()
+        System.Console.SetCursorPosition(x, y)
+        System.Console.Write("▐")
+    End Sub
+
 End Module
