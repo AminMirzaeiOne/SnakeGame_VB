@@ -61,7 +61,7 @@ Public Module Program
 
     Public Sub DrawSnake()
         System.Console.SetCursorPosition(x, y)
-        System.Console.Write("▐")
+        System.Console.Write("▀")
     End Sub
 
 End Module
