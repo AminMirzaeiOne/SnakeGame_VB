@@ -5,7 +5,7 @@ Imports System.Threading
 Imports System.Threading.Tasks
 
 Public Module Program
-    Public Async Function Main(args As String()) As Task
+    Public Sub Main()
 
-    End Function
+    End Sub
 End Module
