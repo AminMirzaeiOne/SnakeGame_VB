@@ -18,6 +18,8 @@ Public Module Program
         Dim finished As Boolean = False
         Width = 100
         Height = 50
+        x = 20
+        y = 20
         While Not finished
             DrawBoard()
             System.Console.Read()
