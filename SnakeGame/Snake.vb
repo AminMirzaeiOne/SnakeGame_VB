@@ -14,8 +14,11 @@
     End Sub
 
     Public Sub DrawSnake()
-        System.Console.SetCursorPosition(x, y)
-        System.Console.Write("▀")
+        For Each pos As Position In snakeBody
+            System.Console.SetCursorPosition(pos.x, pos.y)
+            System.Console.Write("▀")
+        Next
+
     End Sub
 
     Public Sub Input()
