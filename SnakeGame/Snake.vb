@@ -4,9 +4,12 @@
     Public Property x As Integer
     Public Property y As Integer
 
+    Dim snakePosition As System.Collections.Generic.List(Of SnakeGame.Position)
+
     Public Sub SnakeConstructor()
         Me.x = 20
         Me.y = 20
+        Me.snakePosition = New List(Of SnakeGame.Position)()
     End Sub
 
     Public Sub DrawSnake()
