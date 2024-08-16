@@ -53,5 +53,8 @@
         ElseIf Me.dir = "l" Then
             Me.x = Me.x - 1
         End If
+
+        Me.snakeBody.Add(New SnakeGame.Position(Me.x, Me.y))
+        Me.snakeBody.RemoveAt(0)
     End Sub
 End Class
