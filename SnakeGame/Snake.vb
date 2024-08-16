@@ -9,6 +9,11 @@
         Me.y = 20
     End Sub
 
+    Public Sub DrawSnake()
+        System.Console.SetCursorPosition(x, y)
+        System.Console.Write("▉")
+    End Sub
+
     Public Sub Input()
         If System.Console.KeyAvailable = True Then
             Me.key = Me.keyInfo.KeyChar
