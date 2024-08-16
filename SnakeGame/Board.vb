@@ -10,23 +10,23 @@
     Public Sub DrawBoard()
         System.Console.Clear()
 
-        For i As Integer = 0 To Width - 1
+        For i As Integer = 0 To Me.Width - 1
             System.Console.SetCursorPosition(i, 0)
             System.Console.Write("-")
         Next
 
-        For i As Integer = 0 To Width - 1
-            System.Console.SetCursorPosition(i, Height)
+        For i As Integer = 0 To Me.Width - 1
+            System.Console.SetCursorPosition(i, Me.Height)
             System.Console.Write("-")
         Next
 
-        For i As Integer = 0 To Height - 1
+        For i As Integer = 0 To Me.Height - 1
             System.Console.SetCursorPosition(0, i)
             System.Console.Write("-")
         Next
 
-        For i As Integer = 0 To Height - 1
-            System.Console.SetCursorPosition(Width, i)
+        For i As Integer = 0 To Me.Height - 1
+            System.Console.SetCursorPosition(Me.Width, i)
             System.Console.Write("-")
         Next
     End Sub
