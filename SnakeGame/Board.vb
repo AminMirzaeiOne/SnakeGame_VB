@@ -4,7 +4,7 @@
     Public Sub BoardConstructor()
         Me.Width = 100
         Me.Height = 50
-
+        System.Console.CursorVisible = False
     End Sub
 
     Public Sub DrawBoard()
