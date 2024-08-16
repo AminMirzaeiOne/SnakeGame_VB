@@ -24,6 +24,7 @@
 
     Public Sub Input()
         If System.Console.KeyAvailable = True Then
+            Me.keyInfo = System.Console.ReadKey(True)
             Me.key = Me.keyInfo.KeyChar
         End If
     End Sub
@@ -56,5 +57,7 @@
 
         Me.snakeBody.Add(New SnakeGame.Position(Me.x, Me.y))
         Me.snakeBody.RemoveAt(0)
+        System.Threading.Thread.Sleep(100)
+
     End Sub
 End Class

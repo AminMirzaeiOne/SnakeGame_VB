@@ -18,7 +18,7 @@ Public Module Program
             board.DrawBoard()
             snake.DrawSnake()
             snake.MoveSnake()
-            System.Console.Read()
+            'System.Console.Read()
         End While
     End Sub
 
