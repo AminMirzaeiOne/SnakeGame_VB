@@ -39,7 +39,12 @@
 
         ElseIf Me.key = "a" AndAlso Me.dir = "r" Then
             Me.dir = "r"
+        End If
+    End Sub
 
+    Public Sub MoveSnake()
+        If Me.dir = "u" Then
+            y = y - 1
         End If
     End Sub
 End Class
