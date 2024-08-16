@@ -17,6 +17,7 @@ Public Module Program
         While Not finished
             board.DrawBoard()
             snake.DrawSnake()
+            snake.MoveSnake()
             System.Console.Read()
         End While
     End Sub

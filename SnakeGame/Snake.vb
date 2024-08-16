@@ -43,6 +43,7 @@
     End Sub
 
     Public Sub MoveSnake()
+        Me.Direction()
         If Me.dir = "u" Then
             Me.y = Me.y - 1
         ElseIf Me.dir = "d" Then
