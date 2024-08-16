@@ -29,22 +29,28 @@
     End Sub
 
     Public Sub Direction()
-        If Me.key = "w" AndAlso Me.dir = "d" Then
+        If Me.key = "w" AndAlso Me.dir <> "d" Then
             Me.dir = "u"
-        ElseIf Me.key = "s" AndAlso Me.dir = "u" Then
+        ElseIf Me.key = "s" AndAlso Me.dir <> "u" Then
             Me.dir = "d"
 
-        ElseIf Me.key = "d" AndAlso Me.dir = "l" Then
+        ElseIf Me.key = "d" AndAlso Me.dir <> "l" Then
             Me.dir = "r"
 
-        ElseIf Me.key = "a" AndAlso Me.dir = "r" Then
+        ElseIf Me.key = "a" AndAlso Me.dir <> "r" Then
             Me.dir = "r"
         End If
     End Sub
 
     Public Sub MoveSnake()
         If Me.dir = "u" Then
-            y = y - 1
+            Me.y = Me.y - 1
+        ElseIf Me.dir = "d" Then
+            Me.y = Me.y + 1
+        ElseIf Me.dir = "r" Then
+            Me.x = Me.x + 1
+        ElseIf Me.dir = "l" Then
+            Me.x = Me.x - 1
         End If
     End Sub
 End Class
