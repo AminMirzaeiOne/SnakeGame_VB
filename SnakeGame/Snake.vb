@@ -11,7 +11,7 @@
 
     Public Sub DrawSnake()
         System.Console.SetCursorPosition(x, y)
-        System.Console.Write("▉")
+        System.Console.Write("▀")
     End Sub
 
     Public Sub Input()
