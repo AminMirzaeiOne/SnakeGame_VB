@@ -8,10 +8,15 @@ Public Module Program
 
     Public Sub Main()
         Dim finished As Boolean = False
-        Dim board As Board = New Board()
+        Dim board As SnakeGame.Board = New SnakeGame.Board()
+        Dim snake As SnakeGame.Snake = New SnakeGame.Snake()
+
         board.BoardConstructor()
+        snake.SnakeConstructor()
+
         While Not finished
             board.DrawBoard()
+            snake.DrawSnake()
             System.Console.Read()
         End While
     End Sub
