@@ -10,6 +10,7 @@
         Me.x = 20
         Me.y = 20
         Me.snakePosition = New List(Of SnakeGame.Position)()
+        Me.snakePosition.Add(New Position(x, y))
     End Sub
 
     Public Sub DrawSnake()
