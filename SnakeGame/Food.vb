@@ -12,4 +12,8 @@
         System.Console.SetCursorPosition(Me.foodPos.x, Me.foodPos.y)
         System.Console.Write("f")
     End Sub
+
+    Public Function FoodLocation() As SnakeGame.Position
+        Return foodPos
+    End Function
 End Class
