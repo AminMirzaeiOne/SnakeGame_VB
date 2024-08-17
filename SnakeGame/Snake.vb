@@ -39,7 +39,7 @@
             Me.dir = "r"
 
         ElseIf Me.key = "a" AndAlso Me.dir <> "r" Then
-            Me.dir = "r"
+            Me.dir = "a"
         End If
     End Sub
 
@@ -51,7 +51,7 @@
             Me.y = Me.y + 1
         ElseIf Me.dir = "r" Then
             Me.x = Me.x + 1
-        ElseIf Me.dir = "l" Then
+        ElseIf Me.dir = "a" Then
             Me.x = Me.x - 1
         End If
 

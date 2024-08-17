@@ -13,13 +13,14 @@ Public Module Program
 
         board.BoardConstructor()
         snake.SnakeConstructor()
+        board.DrawBoard()
 
         While Not finished
-            board.DrawBoard()
+            snake.Input()
             snake.DrawSnake()
             snake.MoveSnake()
-            'System.Console.Read()
         End While
+
     End Sub
 
 End Module
