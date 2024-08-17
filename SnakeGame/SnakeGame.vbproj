@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="Board.vb" />
     <Compile Include="Food.vb" />
+    <Compile Include="Options.vb" />
     <Compile Include="Position.vb" />
     <Compile Include="Program.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
