@@ -26,5 +26,5 @@ The famous Snake game in a console application in vb.net language <br />
 4 - Press the Enter button<br />
 5 - Play and enjoy <br />
 
-<h2>📷 Screenshots</h2>
-<img width="674" alt="Capture16" src="https://github.com/user-attachments/assets/60d526fb-2d8b-4a82-862c-b84dee0882f5">
+<h2>📷 Screenshots and Gif</h2>
+![ezgif-1-20f586997f](https://github.com/user-attachments/assets/a82f4544-9091-424a-bcf8-59edac3783b1)
