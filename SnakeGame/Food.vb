@@ -16,4 +16,9 @@
     Public Function FoodLocation() As SnakeGame.Position
         Return foodPos
     End Function
+
+    Public Sub FoodNewLocation()
+        Me.foodPos.x = Me.rnd.Next(5, Me.board.Width)
+        Me.foodPos.y = Me.rnd.Next(5, Me.board.Height)
+    End Sub
 End Class
