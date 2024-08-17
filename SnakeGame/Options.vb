@@ -6,8 +6,12 @@ Module Options
         Large = 100
     End Enum
 
-    Public Property BoardSize As SnakeGame.BoardSizes
-    Public Property CharBoard As Char = "-"
-    Public Property CharSnake As Char = ""
+    Public ReadOnly Property BoardSize As SnakeGame.BoardSizes
+    Public ReadOnly Property CharBoard As Char = "-"
+    Public ReadOnly Property CharSnake As Char = "▀"
+
+    Public Sub QuestionBoardSize()
+        System.Console.Write("What is the size of the game board? (Small , Medium , Large) : ")
+    End Sub
 
 End Module
