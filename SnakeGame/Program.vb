@@ -22,6 +22,7 @@ Public Module Program
             food.DrawFood()
             snake.DrawSnake()
             snake.MoveSnake()
+            snake.SnakeGrow(food.FoodLocation(), food)
         End While
 
     End Sub
