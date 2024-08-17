@@ -60,4 +60,11 @@
         System.Threading.Thread.Sleep(100)
 
     End Sub
+
+    Public Sub SnakeGrow(food As SnakeGame.Position)
+        Dim sn As Position = Me.snakeBody(Me.snakeBody.Count - 1)
+        If sn.x = food.x AndAlso sn.y = food.y Then
+            Me.snakeBody.Add(New SnakeGame.Position(x, y))
+        End If
+    End Sub
 End Class
