@@ -3,14 +3,14 @@
     Public Property Height As Integer
 
     Public Sub New()
-        Me.Width = 100
-        Me.Height = 50
+        Me.Width = 50
+        Me.Height = 30
         System.Console.CursorVisible = False
     End Sub
 
     Public Sub BoardConstructor()
-        Me.Width = 100
-        Me.Height = 50
+        Me.Width = 50
+        Me.Height = 30
         System.Console.CursorVisible = False
     End Sub
 
