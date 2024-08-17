@@ -3,14 +3,14 @@
     Public Property Height As Integer
 
     Public Sub New()
-        Me.Width = 50
-        Me.Height = 20
+        Me.Width = SnakeGame.Options.BoardSize
+        Me.Height = SnakeGame.Options.BoardSize
         System.Console.CursorVisible = False
     End Sub
 
     Public Sub BoardConstructor()
-        Me.Width = 50
-        Me.Height = 20
+        Me.Width = SnakeGame.Options.BoardSize
+        Me.Height = SnakeGame.Options.BoardSize
         System.Console.CursorVisible = False
     End Sub
 

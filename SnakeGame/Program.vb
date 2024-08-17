@@ -17,6 +17,7 @@ Public Module Program
         System.Console.Clear()
         System.Console.ForegroundColor = SnakeGame.Themes.foreColor
         SnakeGame.Themes.QuestionThemeColor()
+        SnakeGame.Options.QuestionBoardSize()
         board.BoardConstructor()
         snake.SnakeConstructor()
         System.Console.Write("Press Enter.")
