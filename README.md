@@ -17,13 +17,14 @@ The famous Snake game in a console application in vb.net language <br />
 
 
 <h2> 📜 Program Rules</h2>
-1 - The numbers must be correct<br />
+1 - Snake game rules <br />
 
 <h2> 💡 Program Help</h2>
 1 - Run the program first<br />
-2 - Then enter the correct number<br />
-3 - Press the Enter button<br />
-4 - View the result
+2 - Specify the theme of the program, for example, dark <br />
+3 - Specify the color of the program, for example, blue
+4 - Press the Enter button<br />
+5 - Play and enjoy <br />
 
 <h2>📷 Screenshots</h2>
 <img width="674" alt="Capture16" src="https://github.com/user-attachments/assets/60d526fb-2d8b-4a82-862c-b84dee0882f5">
