@@ -18,6 +18,7 @@ Public Class Snake
 
     Public Sub DrawSnake()
         For Each pos As Position In snakeBody
+            System.Console.ForegroundColor = SnakeGame.Themes.snakeColor
             System.Console.SetCursorPosition(pos.x, pos.y)
             System.Console.Write("▀")
         Next

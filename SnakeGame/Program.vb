@@ -12,6 +12,11 @@ Public Module Program
         Dim snake As SnakeGame.Snake = New SnakeGame.Snake()
         Dim food As SnakeGame.Food = New Food()
 
+        SnakeGame.Themes.QuestionTheme()
+        System.Console.BackgroundColor = SnakeGame.Themes.backColor
+        System.Console.Clear()
+        System.Console.ForegroundColor = SnakeGame.Themes.foreColor
+        SnakeGame.Themes.QuestionThemeColor()
         board.BoardConstructor()
         snake.SnakeConstructor()
         System.Console.Write("Press Enter.")
