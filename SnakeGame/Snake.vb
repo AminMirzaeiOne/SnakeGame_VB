@@ -76,7 +76,7 @@ Public Class Snake
         For i As Integer = 1 To snakeBody.Count - 2 - 1
             Dim sb As Position = snakeBody(i)
             If head.x = sb.x AndAlso head.y = sb.y Then
-
+                Throw New SnakeGame.SnakeExecption("Error")
             End If
         Next
     End Sub
