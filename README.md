@@ -6,7 +6,7 @@ The famous Snake game in a console application in vb.net language <br />
 
 <h2> ⭐ Features</h2>
 - Light Mode and Dark Mode<br />
-- Having Theme Color for further customization (BLue , Red , Yellow , Green , Magenta) <br />
+- Having Theme Color for further customization (Blue , Red , Yellow , Green , Magenta) <br />
 
 <h2> 🏗 Build Information</h2>
 - Made in year = January 2016 <br />
