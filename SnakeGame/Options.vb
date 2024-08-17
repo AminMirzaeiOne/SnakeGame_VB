@@ -23,4 +23,14 @@ Module Options
         End Select
     End Sub
 
+    Public Sub QuestionCharBoard()
+        System.Console.Write("What is the character of the game Board (Char) : ")
+        CharBoard = System.Console.ReadLine()
+    End Sub
+
+    Public Sub QuestionCharSnake()
+        System.Console.Write("What is the character of the game Snake (Char) : ")
+        CharSnake = System.Console.ReadLine()
+    End Sub
+
 End Module
