@@ -1,4 +1,6 @@
-﻿Public Class Snake
+﻿Imports System.Runtime.Remoting.Messaging
+
+Public Class Snake
     Public keyInfo As System.ConsoleKeyInfo
     Public key As Char = "w"
     Public dir As Char = "u"
@@ -62,10 +64,20 @@
     End Sub
 
     Public Sub SnakeGrow(food As SnakeGame.Position, f As SnakeGame.Food)
-        Dim sn As Position = Me.snakeBody(Me.snakeBody.Count - 1)
-        If sn.x = food.x AndAlso sn.y = food.y Then
+        Dim head As Position = Me.snakeBody(Me.snakeBody.Count - 1)
+        If head.x = food.x AndAlso head.y = food.y Then
             Me.snakeBody.Add(New SnakeGame.Position(x, y))
             f.FoodNewLocation()
         End If
+    End Sub
+
+    Public Sub IsDead()
+        Dim head As Position = Me.snakeBody(Me.snakeBody.Count - 1)
+        For i As Integer = 1 To snakeBody.Count - 2 - 1
+            Dim sb As Position = snakeBody(i)
+            If head.x = sb.x AndAlso head.y = sb.y Then
+
+            End If
+        Next
     End Sub
 End Class
