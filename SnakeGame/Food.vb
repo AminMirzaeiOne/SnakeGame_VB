@@ -9,6 +9,7 @@
     End Sub
 
     Public Sub DrawFood()
+        System.Console.ForegroundColor = SnakeGame.Themes.foodColor
         System.Console.SetCursorPosition(Me.foodPos.x, Me.foodPos.y)
         System.Console.Write("f")
     End Sub

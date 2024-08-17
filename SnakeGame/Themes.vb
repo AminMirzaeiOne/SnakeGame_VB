@@ -1,11 +1,11 @@
 ﻿Public Module Themes
     Dim theme As String = "None"
     Dim themeColor As String = "Blue"
-    Dim backColor As ConsoleColor = ConsoleColor.Black
-    Dim foreColor As ConsoleColor = ConsoleColor.White
-    Dim boardColor As ConsoleColor = ConsoleColor.Blue
-    Dim snakeColor As ConsoleColor = ConsoleColor.DarkCyan
-    Dim foodColor As ConsoleColor = ConsoleColor.Cyan
+    Public backColor As ConsoleColor = ConsoleColor.Black
+    Public foreColor As ConsoleColor = ConsoleColor.White
+    Public boardColor As ConsoleColor = ConsoleColor.Blue
+    Public snakeColor As ConsoleColor = ConsoleColor.DarkCyan
+    Public foodColor As ConsoleColor = ConsoleColor.Cyan
     Public Sub QuestionTheme()
         System.Console.Write("Specify the Theme of the app (Light or Dark) : ")
         theme = System.Console.ReadLine()
