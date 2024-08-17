@@ -10,6 +10,7 @@ Public Module Program
         Dim finished As Boolean = False
         Dim board As SnakeGame.Board = New SnakeGame.Board()
         Dim snake As SnakeGame.Snake = New SnakeGame.Snake()
+        Dim food As SnakeGame.Food = New Food()
 
         board.BoardConstructor()
         snake.SnakeConstructor()
@@ -18,6 +19,7 @@ Public Module Program
         While Not finished
             board.DrawBoard()
             snake.Input()
+            food.DrawFood()
             snake.DrawSnake()
             snake.MoveSnake()
         End While
