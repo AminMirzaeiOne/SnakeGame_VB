@@ -13,9 +13,10 @@ Public Module Program
 
         board.BoardConstructor()
         snake.SnakeConstructor()
-        board.DrawBoard()
-
+        System.Console.Write("Press Enter.")
+        System.Console.Read()
         While Not finished
+            board.DrawBoard()
             snake.Input()
             snake.DrawSnake()
             snake.MoveSnake()
