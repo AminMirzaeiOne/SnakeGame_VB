@@ -7,30 +7,46 @@ Imports System.Threading.Tasks
 Public Module Program
 
     Public Sub Main()
+
+
+        System.Console.Write("Play Or Settings : ")
+        Dim x As String = System.Console.ReadLine().ToLower()
+        If x = "play" Then
+
+        ElseIf x = "settings" Then
+
+        End If
+
+    End Sub
+
+    Public Sub Play()
         Dim finished As Boolean = False
         Dim board As SnakeGame.Board = New SnakeGame.Board()
         Dim snake As SnakeGame.Snake = New SnakeGame.Snake()
         Dim food As SnakeGame.Food = New Food()
 
+        board.BoardConstructor()
+        snake.SnakeConstructor()
+        System.Console.Write("Press Enter.")
+        System.Console.Read()
+
+        While Not finished
+            Board.DrawBoard()
+            Snake.Input()
+            Food.DrawFood()
+            Snake.DrawSnake()
+            Snake.MoveSnake()
+            Snake.SnakeGrow(Food.FoodLocation(), Food)
+        End While
+    End Sub
+
+    Public Sub Settings()
         SnakeGame.Themes.QuestionTheme()
         System.Console.BackgroundColor = SnakeGame.Themes.backColor
         System.Console.Clear()
         System.Console.ForegroundColor = SnakeGame.Themes.foreColor
         SnakeGame.Themes.QuestionThemeColor()
         SnakeGame.Options.QuestionBoardSize()
-        board.BoardConstructor()
-        snake.SnakeConstructor()
-        System.Console.Write("Press Enter.")
-        System.Console.Read()
-        While Not finished
-            board.DrawBoard()
-            snake.Input()
-            food.DrawFood()
-            snake.DrawSnake()
-            snake.MoveSnake()
-            snake.SnakeGrow(food.FoodLocation(), food)
-        End While
-
     End Sub
 
 End Module
