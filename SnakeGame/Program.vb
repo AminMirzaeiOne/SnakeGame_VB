@@ -5,7 +5,7 @@ Imports System.Threading
 Imports System.Threading.Tasks
 
 Public Module Program
-
+    Public finished As Boolean = False
     Public Sub Main()
 
 start:
@@ -23,7 +23,6 @@ start:
     End Sub
 
     Public Sub Play()
-        Dim finished As Boolean = False
         Dim board As SnakeGame.Board = New SnakeGame.Board()
         Dim snake As SnakeGame.Snake = New SnakeGame.Snake()
         Dim food As SnakeGame.Food = New Food()
@@ -39,8 +38,10 @@ start:
             Food.DrawFood()
             Snake.DrawSnake()
             Snake.MoveSnake()
-            Snake.SnakeGrow(Food.FoodLocation(), Food)
+            snake.SnakeGrow(food.FoodLocation(), food)
         End While
+
+
     End Sub
 
     Public Sub Settings()
@@ -55,7 +56,13 @@ start:
         System.Console.WriteLine("Press Keyboard Key To Play Snake Game : ")
         Console.Read()
         Play()
+    End Sub
 
+    Public Sub ProgrammerInfo()
+        System.Console.ForegroundColor = ConsoleColor.Magenta
+        System.Console.WriteLine("-----------------------")
+        System.Console.ForegroundColor = ConsoleColor.Red
+        System.Console.WriteLine("Programmer : Amin Mirzaei - Github(UserName) : AminMirzaeiOne")
     End Sub
 
 End Module
