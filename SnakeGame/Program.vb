@@ -50,6 +50,8 @@ start:
         System.Console.ForegroundColor = SnakeGame.Themes.foreColor
         SnakeGame.Themes.QuestionThemeColor()
         SnakeGame.Options.QuestionBoardSize()
+        SnakeGame.Options.QuestionCharBoard()
+        SnakeGame.Options.QuestionCharSnake()
         System.Console.WriteLine("Press Keyboard Key To Play Snake Game : ")
         Console.Read()
         Play()
