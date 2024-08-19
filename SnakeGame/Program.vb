@@ -15,7 +15,7 @@ start:
             Play()
         ElseIf x = "settings" Then
             Settings()
-        ElseIf x = "ifno" Then
+        ElseIf x = "info" Then
             ProgrammerInfo()
         Else
             System.Console.WriteLine("The entered word is invalid, it should be (Play or Settings).")
