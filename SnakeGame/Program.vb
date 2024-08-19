@@ -9,12 +9,14 @@ Public Module Program
     Public Sub Main()
 
 start:
-        System.Console.Write("Play Or Settings : ")
+        System.Console.Write("Play Or Settings Or Info : ")
         Dim x As String = System.Console.ReadLine().ToLower()
         If x = "play" Then
             Play()
         ElseIf x = "settings" Then
             Settings()
+        ElseIf x = "ifno" Then
+            ProgrammerInfo()
         Else
             System.Console.WriteLine("The entered word is invalid, it should be (Play or Settings).")
             GoTo start
