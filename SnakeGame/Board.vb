@@ -15,6 +15,7 @@
     End Sub
 
     Public Sub DrawBoard()
+        System.Console.BackgroundColor = SnakeGame.Themes.backColor
         System.Console.Clear()
         System.Console.ForegroundColor = SnakeGame.Themes.boardColor
         For i As Integer = 0 To Me.Width - 1

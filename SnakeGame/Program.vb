@@ -8,13 +8,16 @@ Public Module Program
 
     Public Sub Main()
 
-
+start:
         System.Console.Write("Play Or Settings : ")
         Dim x As String = System.Console.ReadLine().ToLower()
         If x = "play" Then
-
+            Play()
         ElseIf x = "settings" Then
-
+            Settings()
+        Else
+            System.Console.WriteLine("The entered word is invalid, it should be (Play or Settings).")
+            GoTo start
         End If
 
     End Sub
@@ -47,6 +50,10 @@ Public Module Program
         System.Console.ForegroundColor = SnakeGame.Themes.foreColor
         SnakeGame.Themes.QuestionThemeColor()
         SnakeGame.Options.QuestionBoardSize()
+        System.Console.WriteLine("Press Keyboard Key To Play Snake Game : ")
+        Console.Read()
+        Play()
+
     End Sub
 
 End Module
