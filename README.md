@@ -31,3 +31,5 @@ The famous Snake game in a console application in vb.net language <br />
 
 <h2>📷 Screenshots and Gif</h2>
 ![ezgif-1-20f586997f](https://github.com/user-attachments/assets/a82f4544-9091-424a-bcf8-59edac3783b1)
+
+🚨("The gifs belong to the old version without the game menu")🚨
