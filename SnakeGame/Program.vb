@@ -65,6 +65,7 @@ start:
         System.Console.WriteLine("-----------------------")
         System.Console.ForegroundColor = ConsoleColor.Red
         System.Console.WriteLine("Programmer : Amin Mirzaei - Github(UserName) : AminMirzaeiOne")
+        System.Console.ReadKey()
     End Sub
 
 End Module
