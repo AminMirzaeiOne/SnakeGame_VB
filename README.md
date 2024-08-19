@@ -24,8 +24,8 @@ The famous Snake game in a console application in vb.net language <br />
 
 <h2> 💡 Program Help</h2>
 1 - Run the program first<br />
-2 - Specify the theme of the program, for example, dark <br />
-3 - Specify the color of the program, for example, blue
+2 - Choose from three options: play, settings, and info (Play is to start the game) - (Settings for game settings and options such as theme or board size) - (Info to see developer profile) <br />
+3 - After choosing to play the game, press the enter key on the keyboard <br />
 4 - Press the Enter button<br />
 5 - Play and enjoy <br />
 
